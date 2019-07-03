@@ -26,5 +26,13 @@ namespace WindowsFormsApplication1
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Console.WriteLine("button2");
+            }
+        }
     }
 }
